@@ -1,4 +1,4 @@
-{"homepage": "http://pankaj-FWD.github.io/premium",
+{"homepage": "http://pankaj-fwd.github.io/premium",
   "name": "intrepide",
   "version": "0.1.0",
   "private": true,
@@ -22,8 +22,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "predeploy":"yarn install",
-    "deploy":"yarn dev"
+    "predeploy":"yarn build",
+    "deploy":"gh-pages -d dist"
 
   },
   "engines": {
