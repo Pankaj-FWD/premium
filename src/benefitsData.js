@@ -9,7 +9,7 @@ export const benefitsData = [
   },
   {
     id: 3,
-    benefit: "More than 250+ gyms spread all over the world.",
+    benefit: "More than 250+ gyms spread all over the world..",
   },
   {
     id: 4,
