@@ -206,12 +206,7 @@ export const plans = [
             {feature: 'Fifth Feature', available: true},
             {feature: 'Fifth Feature Plus', available: false},
             {feature: 'Sixth Feature', available: false},
-            {feature: 'Seventh Feature', available: false},
-            {feature: 'Seventh Feature Plus', available: false},
-            {feature: 'Eighth Feature', available: false},
-            {feature: 'Ninth Feature', available: false},
-            {feature: 'Tenth Feature', available: false},
-            {feature: 'Eleventh Feature', available: false}
+          
         ]
     },
     {
@@ -227,12 +222,7 @@ export const plans = [
             {feature: 'Fifth Feature', available: true},
             {feature: 'Fifth Feature Plus', available: true},
             {feature: 'Sixth Feature', available: true},
-            {feature: 'Seventh Feature', available: true},
-            {feature: 'Seventh Feature Plus', available: true},
-            {feature: 'Eighth Feature', available: false},
-            {feature: 'Ninth Feature', available: false},
-            {feature: 'Tenth Feature', available: false},
-            {feature: 'Eleventh Feature', available: false}
+       
         ]
     },
     {
@@ -248,12 +238,7 @@ export const plans = [
             {feature: 'Fifth Feature', available: true},
             {feature: 'Fifth Feature Plus', available: true},
             {feature: 'Sixth Feature', available: true},
-            {feature: 'Seventh Feature', available: true},
-            {feature: 'Seventh Feature Plus', available: true},
-            {feature: 'Eighth Feature', available: true},
-            {feature: 'Ninth Feature', available: true},
-            {feature: 'Tenth Feature', available: true},
-            {feature: 'Eleventh Feature', available: true}
+           
         ]
     }
 ]
