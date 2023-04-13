@@ -1,9 +1,8 @@
-# Intrepide
+# Premium Fit
 
 ## Gym fitness website using react js and styled components
 
-- ## Design: [Intrepide](https://www.figma.com/file/cWhpA7Pyx2Ytrb4EFP1CFF/Intrepide?node-id=0%3A1)
-- ## Live: [Intrepide](https://intrepide.netlify.app/)
+- ## Live: [Premium-Fit](http://pankaj-FWD.github.io/premium/)
 
 ---
 
