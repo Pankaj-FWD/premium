@@ -27,7 +27,7 @@ const Contact = () => {
             
             <div class="contact-info-content">
               <h4>Address</h4>
-              <p>Near old petrole pump,<br/> CSB Road, Saurikh, <br/>209728</p>
+              <p>C.S.B Road,<br/>Gandhi Nagar, Saurikh, <br/>209728</p>
             </div>
           </div>
           
@@ -38,7 +38,7 @@ const Contact = () => {
             
             <div class="contact-info-content">
               <h4>Phone</h4>
-              <p>+91-7317826455</p>
+              <p>7317826455</p>
             </div>
           </div>
           
@@ -49,7 +49,7 @@ const Contact = () => {
             
             <div class="contact-info-content">
               <h4>Email</h4>
-             <p>premium_fitness@gmail.com</p>
+             <p>contact@premiumfitness.co.in</p>
             </div>
           </div>
         </div>

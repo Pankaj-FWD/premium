@@ -266,13 +266,18 @@ footer {
     gap: 1rem;
 }
 
-.footer__socials a{
+.footer__socials a {
     background: var(--color-gray-100);
-   padding: 0.3rem 0.7rem;
+    padding: 0.3rem 0.7rem;
     border: 1px solid transparent;
     border-radius: 0.6rem;
     transition: var(--transition);
+    display: inline-block;
+    margin-right: 0.5rem; /* Add margin to separate icons */
+    font-size: 1.5rem; /* Adjust the font size as needed */
+    color: var(--color-primary); /* Set the icon color */
 }
+
 
 .footer__socials a svg {
     color: var(--color-gray-600);

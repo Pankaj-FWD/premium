@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../images/logo.png";
-import { FaLinkedin } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { AiFillInstagram } from "react-icons/ai";
@@ -20,13 +20,9 @@ const Footer = () => {
 						incididunt nisi.
 					</p>
 					<div className="footer__socials">
-						<a
-							href="https://www.linkedin.com/in/"
-							target="_blank"
-							rel="noreferrer noopener"
-						>
-							<FaLinkedin />
-						</a>
+					<a href="https://api.whatsapp.com/send?phone=7317826455" target="_blank" rel="noreferrer noopener">
+            <FaWhatsapp />
+          </a>
 						<a
 							href="https://www.facebook.com/people/Priyank-Singh/pfbid0nt114CGqznw2BbiAENc1rPG5k2NxbkAJ1wXS54GtPHk9ErGVo77ba5h4fNF9Co5Dl/?mibextid=2JQ9oc"
 							target="_blank"
