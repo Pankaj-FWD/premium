@@ -21,28 +21,28 @@ const Footer = () => {
 					</p>
 					<div className="footer__socials">
 						<a
-							href="https://www.linkedin.com/in/eniola-ademola-7386161a7/"
+							href="https://www.linkedin.com/in/"
 							target="_blank"
 							rel="noreferrer noopener"
 						>
 							<FaLinkedin />
 						</a>
 						<a
-							href="https://facebook.com/"
+							href="https://www.facebook.com/people/Priyank-Singh/pfbid0nt114CGqznw2BbiAENc1rPG5k2NxbkAJ1wXS54GtPHk9ErGVo77ba5h4fNF9Co5Dl/?mibextid=2JQ9oc"
 							target="_blank"
 							rel="noreferrer noopener"
 						>
 							<FaFacebookF />
 						</a>
 						<a
-							href="https://twitter.com/_daveworld"
+							href="https://twitter.com/Priyank71466531"
 							target="_blank"
 							rel="noreferrer noopener"
 						>
 							<AiOutlineTwitter />
 						</a>
 						<a
-							href="https://instagram.com/_daveworld"
+							href="https://www.instagram.com/premiumfitness_07"
 							target="_blank"
 							rel="noreferrer noopener"
 						>
