@@ -26,6 +26,10 @@ export const links = [
     {
         name: "Contact",
         path: '/contact'
+    },
+    {
+        name: "Login",
+        path: '/Login'
     }
 ]
 
@@ -77,26 +81,26 @@ export const values = [
     {
         id: 1,
         icon: <SiOpenaigym/>,
-        title: "Value One",
-        desc: "Placeat quidem facere dicta modi? Pariatur exercitationem illum."
+        title: "Passion for Progress",
+        desc: "We're passionate about progress, both yours and ours."
     },
     {
         id: 2,
         icon: <SiOpenaigym/>,
-        title: "Value Two",
-        desc: "Placeat quidem facere dicta modi? Pariatur exercitationem illum."
+        title: "Personalized Approach",
+        desc: "we craft our approach to match your distinct needs, goals, and preferences."
     },
     {
         id: 3,
         icon: <SiOpenaigym/>,
-        title: "Value Three",
-        desc: "Placeat quidem facere dicta modi? Pariatur exercitationem illum."
+        title: " Integrity and Trust",
+        desc: "We're committed to being transparent, trustworthy, and respectful in everything we do."
     },
     {
         id: 4,
         icon: <SiOpenaigym/>,
-        title: "Value Four",
-        desc: "Placeat quidem facere dicta modi? Pariatur exercitationem illum."
+        title: "Celebration of Diversity",
+        desc: "We celebrate all backgrounds, fitness levels, and goals."
     }
 ]
 
@@ -112,17 +116,17 @@ export const faqs = [
     {
         id: 1,
         question: "How often should I exercise?",
-        answer: "Consectetur adipisicing elit. Non ipsa dolorem, rem consequatur eum omnis ex, fuga temporibus qui nesciunt odio aliquam commodi culpa inventore ut similique repellendus perferendis sint!"
+        answer: " For general health, aim for at least 150 minutes of moderate exercise or 75 minutes of vigorous exercise per week, along with strength training on two days. Adjust based on your goals and consult our trainers for personalized recommendations."
     },
     {
         id: 2,
         question: "What time of day is best to work out?",
-        answer: "Distinctio nihil blanditiis accusantium atque, quo maxime inventore eum! Cum dolorem quibusdam amet et qui. Eos, omnis beatae? Quas, est at! Molestiae quidem ab soluta exercitationem culpa nostrum iusto illum qui non a harum deserunt atque commodi at velit."
+        answer: "The best time to work out varies based on your preferences and schedule. Morning workouts can boost energy and metabolism, while evenings might enhance strength and performance. Ultimately, consistency matters more than the time. Choose a time that suits you and allows for a regular routine."
     },
     {
         id: 3,
         question: "How long should my workouts be?",
-        answer: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+        answer: "Effective workouts can range from 30 to 60 minutes, focusing on intensity and quality. Shorter, high-intensity sessions can yield great results, while longer sessions may allow for more variety. Prioritize consistency and balance to avoid overexertion and burnout."
     },
     {
         id: 4,
@@ -132,12 +136,12 @@ export const faqs = [
     {
         id: 5,
         question: "Should I do strength training, cardio or both?",
-        answer: "Maiores fuga, cum praesentium esse laudantium! Distinctio nihil blanditiis accusantium atque, quo maxime inventore eum! Cum dolorem quibusdam amet et qui."
+        answer: "Yes, warming up is crucial. Spend 5-10 minutes on light cardio and dynamic stretches to increase blood flow, flexibility, and prevent injury. Warming up prepares your body for the main workout and improves overall performance."
     },
     {
         id: 6,
         question: "Should I lift weights for strength training?",
-        answer: "Quas, est at! Molestiae quidem ab soluta exercitationem culpa nostrum iusto illum qui non a harum deserunt atque commodi at velit, consequatur quibusdam dignissimos cum labore possimus placeat consectetur nisi cupiditate."
+        answer: "Yes, weight lifting is an effective form of strength training. It builds muscle, boosts metabolism, and enhances bone density. However, other resistance exercises like bodyweight moves and resistance bands can also be beneficial. Choose the approach that suits your goals and preferences."
     }
 ]
 
@@ -151,10 +155,10 @@ export const faqs = [
 export const testimonials = [
     {
         id: 1,
-        name: "Diana Ayi",
-        quote: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ipsam facere ea a laboriosam sed? Quod vel voluptates a! Maxime minima cumque aut? In expedita numquam consectetur non officia iusto.",
-        job: "Student",
-        avatar: require("./images/avatar1.jpg")
+        name: "Pankaj Pal",
+        quote: "Finding Premium Fitness was a turning point. The trainers' commitment to my progress pushed me beyond my limits. The variety of classes kept me engaged, and the facility is impeccable. It's more than a gym; it's a family that encourages growth and transformation.",
+        job: "Sofware Engineer",
+        avatar: "https://i.postimg.cc/4ddh6HPv/Screenshot-2023-04-12-174033.png"
     },
     {
         id: 2,
@@ -196,50 +200,48 @@ export const plans = [
     {
         id: 1,
         name: 'Silver Package',
-        desc: 'This package is perfect for beginners who need constant help',
-        price: 29.99,
+        desc: 'Essential Access',
+        price: 500,
         features: [
-            {feature: 'First Feature', available: true},
-            {feature: 'Second Feature', available: true},
-            {feature: 'Third Feature', available: true},
-            {feature: 'Fourth Feature', available: true},
-            {feature: 'Fifth Feature', available: true},
-            {feature: 'Fifth Feature Plus', available: false},
-            {feature: 'Sixth Feature', available: false},
-          
-        ]
+            {feature: 'Full Gym Access', available: true},
+            {feature: 'Flexible Hours', available: true},
+            {feature: 'Open Workout Space', available: true},
+            {feature: 'Community Events', available: true},
+            {feature: 'Group Class Add-ons', available: true},
+            {feature: 'Personal Training', available: false},
+            {feature: 'Progress Tracking', available: false}
+        ]        
     },
     {
         id: 2,
         name: 'Gold Package',
-        desc: 'This is the perfect package for beginners who know what their doing',
-        price: 49.99,
+        desc: 'Personalized Training',
+        price: 1500,
         features: [
-            {feature: 'First Feature', available: true},
-            {feature: 'Second Feature', available: true},
-            {feature: 'Third Feature', available: true},
-            {feature: 'Fourth Feature', available: true},
-            {feature: 'Fifth Feature', available: true},
-            {feature: 'Fifth Feature Plus', available: true},
-            {feature: 'Sixth Feature', available: true},
-       
+            {feature: 'Silver Package Included', available: true},
+            {feature: 'Personal Training Sessions', available: true},
+            {feature: 'Customized Workout Plans', available: true},
+            {feature: 'Progress Tracking', available: true},
+            {feature: 'Priority for Exclusive Classes', available: true},
+            {feature: 'Discounted Additional Training', available: true},
+            {feature: 'Nutritional Counseling', available: true}
         ]
     },
     {
         id: 3,
         name: 'Platinum Package',
-        desc: 'This package is perfect for busy people who need home service',
-        price: 89.99,
+        desc: 'Total Transformation',
+        price: 4500,
         features: [
-            {feature: 'First Feature', available: true},
-            {feature: 'Second Feature', available: true},
-            {feature: 'Third Feature', available: true},
-            {feature: 'Fourth Feature', available: true},
-            {feature: 'Fifth Feature', available: true},
-            {feature: 'Fifth Feature Plus', available: true},
-            {feature: 'Sixth Feature', available: true},
-           
+            {feature: 'Gold Package Included', available: true},
+            {feature: 'Unlimited Personal Training', available: true},
+            {feature: 'Specialty Fitness Classes', available: true},
+            {feature: 'Nutritional Counseling', available: true},
+            {feature: 'Complimentary Group Classes', available: true},
+            {feature: 'Exclusive Platinum Events', available: true},
+            {feature: 'Exclusive Classes', available: true}
         ]
+        
     }
 ]
 

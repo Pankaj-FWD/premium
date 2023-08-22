@@ -11,11 +11,11 @@ const MainHeader = () => {
 					<h1>Join The Legends of the Fitness World</h1>
 					<p>
 					Welcome to the premium fitness, 
-At Zym, we understand that each person has unique fitness needs and goals. That's why we offer a
+At Gym, we understand that each person has unique fitness needs and goals. That's why we offer a
  variety of training programs tailored to your individual needs, including strength training, cardio, 
  group fitness classes, and personal training. 
 					</p>
-					<Link to="/plans" className="btn lg">
+					<Link to="/registration" className="btn lg">
 						Get Started
 					</Link>
 				</div>

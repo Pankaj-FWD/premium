@@ -1,0 +1,26 @@
+/* styles.css */
+.dashboard-container {
+    display: flex;
+     margin: 3.1rem auto;
+  }
+  
+  .sidebar {
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .dashboard-content {
+    padding: 20px;
+  }
+  

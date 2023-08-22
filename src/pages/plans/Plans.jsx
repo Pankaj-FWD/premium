@@ -8,9 +8,9 @@ import Card from "../../UI/Card";
 const Plans = () => {
 	return (
 		<>
-			<Header title="Membership Plans" image={HeaderImage}>
-				Et eu reprehenderit esse minim.Et eu reprehenderit esse minim. Et eu
-				reprehenderit esse minim.
+			<Header title="Transform with Us" image={HeaderImage}>
+			Our membership plans are tailored for you, offering the perfect fit for your
+			 fitness goals. Join us and let's achieve greatness together.
 			</Header>
 			<section className="plans">
 				<div className="container plans__container">
@@ -19,7 +19,7 @@ const Plans = () => {
 							<Card key={id} className="plan">
 								<h3>{name}</h3>
 								<small>{desc}</small>
-								<h1>{`$ ${price}`}</h1>
+								<h1>{`₹ ${price}`}</h1>
 								<h2>/mo</h2>
 								<h4>Features</h4>
 								{features.map(({ feature, available, index }) => {

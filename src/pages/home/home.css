@@ -296,6 +296,18 @@ footer {
     margin-top: 5rem;
 }
 
+.footer__copyright small a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer__copyright small a:hover {
+    text-decoration: bold;
+    color: #07f517; /* Change this to the color you want for highlighting */
+}
+
+
+
 /******************** MEADIA QUERIES (medium screens) ********************/
 @media screen and (max-width: 1024px) {
     /* MAIN HEADER */

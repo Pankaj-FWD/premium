@@ -1,0 +1,22 @@
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  z-index: 9999; /* Ensure the loader is above other content */
+}
+
+.dumbbell-container {
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+}
+
+.dumbbell {
+  width: 100%; /* Make the dumbbell image fit within the container */
+  height: auto; /* Maintain aspect ratio */
+}

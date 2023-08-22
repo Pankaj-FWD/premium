@@ -49,7 +49,7 @@ const Contact = () => {
             
             <div class="contact-info-content">
               <h4>Email</h4>
-             <p>contact@premiumfitness.co.in</p>
+             <p ><a href="mailto: contact@premiumfitness.co.in">contact@premiumfitness.co.in</a></p>
             </div>
           </div>
         </div>

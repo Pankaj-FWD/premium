@@ -51,5 +51,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-// export PATH=$PATH:/home/daveworld/bin
