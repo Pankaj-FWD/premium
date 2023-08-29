@@ -5,11 +5,13 @@ import Program from "../../components/Program";
 import Values from "../../components/Values";
 import FAQs from "../../components/FAQs";
 import Testimonial from "../../components/Testimonial";
+import Navbar from "../../components/Navbar";
 // import Footer from "../../components/Footer";
 
 const Home = () => {
 	return (
 		<>
+		<Navbar />
 			<MainHeader />
 			<Program />
 			<Values />

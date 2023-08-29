@@ -2,10 +2,12 @@ import React from "react";
 import "./contact.css";
 import Header from "../../components/Header";
 import HeaderImage from "../../images/header_bg_2.jpg";
+import Navbar from "../../components/Navbar";
 
 const Contact = () => {
 	return (
 		<>
+    <Navbar />
 			<Header title="Get In Touch" image={HeaderImage}>
 			"If you have any questions, comments, or concerns, please don't hesitate to reach out to us.
 			 You can fill out the contact form below or call us . We're always happy to

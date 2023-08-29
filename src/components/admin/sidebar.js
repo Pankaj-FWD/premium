@@ -1,15 +1,21 @@
-import React from 'react';
-import './dashboard.css'
-
+import React from "react";
+import { FaChartBar, FaUsers, FaBox } from "react-icons/fa"; // Import the desired icons
+import "./dashboard.css";
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
       <ul>
-        <li>Dashboard</li>
-        <li>Users</li>
-        <li>Products</li>
-        {/* Add more sidebar items */}
+        <li>
+          <FaChartBar /> Dashboard
+        </li>
+        <li>
+          <FaUsers /> Users
+        </li>
+        <li>
+          <FaBox /> Products
+        </li>
+        {/* Add more sidebar items with icons */}
       </ul>
     </div>
   );

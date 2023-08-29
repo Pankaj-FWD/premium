@@ -2,6 +2,7 @@ import React from "react";
 import "./gallery.css";
 import HeaderImage from "../../images/header_bg_3.jpg";
 import Header from "../../components/Header";
+import Navbar from "../../components/Navbar";
 
 function Gallery() {
 	const galleryLength = 15;
@@ -13,9 +14,9 @@ function Gallery() {
 
 	return (
 		<>
+		<Navbar />
 			<Header title="Our Gallery" image={HeaderImage}>
-				Quisquam id tenetur adipisci nesciunt ipsum amet in quibusdam,
-				architecto nostrum nobis, est, deserunt odio illum perspiciatis
+			Explore our vibrant gallery showcasing moments of dedication, progress, and success shared by our fitness community. Witness the transformations that inspire us all.
 			</Header>
 			<section className="gallery">
 				<div className="container gallery__container">

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Sidebar from './sidebar';
 import './dashboard.css'
-import swal from 'sweetalert';
+import MemberNavbar from '../member/MemberNavbar';
 
 const Dashboard = () => {
   const [currentTime, setCurrentTime] = useState('');
@@ -16,16 +16,9 @@ const Dashboard = () => {
     return () => clearInterval(interval);
   }, []);
 
-  useEffect(() => {
-    // Display a welcome message using swal
-    swal({
-      title: 'Successfully Login',
-      text: 'Welcome to the Admin Dashboard!',
-      icon: 'success',
-    });
-  }, []);
-
   return (
+    <>
+    <MemberNavbar/>
     <div className="dashboard-container">
       <Sidebar />
       <div className="dashboard-content">
@@ -33,6 +26,7 @@ const Dashboard = () => {
         <p>Current time: {currentTime}</p>
       </div>
     </div>
+    </>
   );
 };
 

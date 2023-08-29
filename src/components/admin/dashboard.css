@@ -1,26 +1,57 @@
 /* styles.css */
 .dashboard-container {
-    display: flex;
-     margin: 3.1rem auto;
-  }
-  
-  .sidebar {
-    width: 200px;
-    background-color: #333;
-    color: #fff;
-  }
-  
-  .sidebar ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .sidebar li {
-    padding: 10px;
-    cursor: pointer;
-  }
-  
-  .dashboard-content {
-    padding: 20px;
-  }
-  
+  display: flex;
+  margin: 3.1rem auto;
+  border-radius: 5px;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #acbfec; /* Sidebar background color */
+  color: #fff;
+  overflow: hidden;
+  overflow-y: auto; /* Add this line to make the sidebar scrollable */
+  max-height: 50vh;
+  transition: width 0.3s ease;
+  border-radius: 5px;
+}
+
+.sidebar:hover {
+  width: 210px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.sidebar li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #ffffff; /* Font color for list items */
+  font-weight: 500; /* Font weight for list items */
+  background: repeating-linear-gradient(45deg, black, transparent 100px);
+}
+
+.sidebar li:hover {
+  background-color: #252f3c; /* Darken background on hover */
+  border-left: 5px solid #ff5722;
+}
+
+.dashboard-content {
+  padding: 20px;
+}
+
+/* Additional styles for box-like appearance */
+.sidebar li {
+  border-radius: 5px;
+  margin: 5px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar li:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

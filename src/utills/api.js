@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const baseURL = 'development' === 'development'
   ?'http://localhost:8000':
-  'https://production-api-url.com';
+  'http://16.171.138.72:8000';
 
 const api = axios.create({
   baseURL,
@@ -33,4 +33,18 @@ export const registerUser = async (formData) => {
       throw error;
     }
   };
+
+  export const changeUserPassword = async (formData) => {
+    try {
+      const response = await api.post('/api/change-user-password', formData, {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+      return response;
+    } catch (error) {
+      throw error;
+    }
+  };
+  
 export default api;

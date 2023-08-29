@@ -8,13 +8,14 @@ import { FaFacebookF } from "react-icons/fa";
 import { trainers } from "../../data";
 import Trainer from "../../components/Trainer";
 import "./trainers.css";
+import Navbar from "../../components/Navbar";
 
 const Trainers = () => {
 	return (
 		<>
+		<Navbar />
 			<Header image={HeaderImage} title="Our Trainers">
-				Adipisicing labore laboris ea sunt cillum ea velit.Adipisicing labore la
-				boris ea sunt cillum ea velit. sunt cillum ea velit.
+			Meet our dedicated trainers, driven by passion and expertise, ready to guide and motivate you to conquer your fitness goals.
 			</Header>
 			<section className="trainers">
 				<div className="container trainers__container">

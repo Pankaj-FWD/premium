@@ -231,7 +231,7 @@
 /******************** FOOTER STYLES ********************/
 footer {
     background: hsl(240.87deg 13.08% 22.05%);
-    margin-top: 7rem;
+    margin-top: 0rem;
     padding-top: 2rem;
     font-size: 0.9rem;
     color: var(--color-gray-100);

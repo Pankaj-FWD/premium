@@ -3,6 +3,8 @@ import './Login.css'; // Create this CSS file to style the form
 import axios from 'axios';
 import { loginUser } from '../../utills/api';
 import swal from 'sweetalert';
+import Navbar from '../../components/Navbar';
+import { decodeTokenAndSaveUser } from "../../utills/authUtils"; 
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -15,31 +17,36 @@ const Login = () => {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-      // Perform login logic here
-      const data = {
-        email,
-        password
+    
+    const data = {
+      email,
+      password
+    };
+  
+    try {
+      const res = await loginUser(data);
+      // Decode token and save user details in local storage
+      if (res.data.data) {
+        const success = decodeTokenAndSaveUser(res.data.data);
+        if (success) {
+        }
       }
-       await loginUser(data).then(async(res)=>{
-    //   await new Promise(resolve => setTimeout(resolve, 3000)); 
-    console.log("--------------------",res)
-   if(res.data.data.user.accType === 'Admin'){
-      window.location.href = '/admin-dashboard';
-   };
-   if(res.data.data.user.accType === 'User'){
-    window.location.href = '/user-dashboard';
-   }
-       }).catch((err)=>{
-        swal({
-            title: 'Login Failed',
-            text: 'Invalid email or password',
-            icon: 'error',
-          });
-       })
-      
-      // Perform any necessary state updates or redirects here
-      
+  
+      // Redirect based on user account type
+      if (res.data.data.user.accType === "Admin") {
+        window.location.href = "/admin-dashboard";
+      } else if (res.data.data.user.accType === "User") {
+        window.location.href = "/user-dashboard";
+      }
+    } catch (err) {
+      swal({
+        title: 'Login Failed',
+        text: 'Invalid email or password',
+        icon: 'error',
+      });
+    }
   };
+  
 
 
   const handleForgotPassword = async (e) => {
@@ -76,6 +83,8 @@ const Login = () => {
   };
 
   return (
+    <>
+    <Navbar />
     <div className="login-container">
       {!isForgotPassword ? (
         <div className="login-form">
@@ -153,6 +162,7 @@ const Login = () => {
         </div>
       )}
     </div>
+    </>
   );
 };
 

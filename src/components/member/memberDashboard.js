@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import Sidebar from './memberSidebar';
 import '../admin/dashboard.css'
+import swal from 'sweetalert';
+import MemberNavbar from './MemberNavbar';
+import MemberSidebar from './memberSidebar';
 
 const MemberDashboard = () => {
   const [currentTime, setCurrentTime] = useState('');
@@ -15,14 +17,25 @@ const MemberDashboard = () => {
     return () => clearInterval(interval);
   }, []);
 
+  // useEffect(() => {
+  //   swal({
+  //     title: 'Successfully Login',
+  //     text: 'Welcome to the User Dashboard!',
+  //     icon: 'success',
+  //   });
+  // }, []);
+
   return (
+    <>
+    <MemberNavbar />
     <div className="dashboard-container">
-      <Sidebar />
+      <MemberSidebar />
       <div className="dashboard-content">
         <h2>Welcome to the User Dashboard</h2>
         <p>Current time: {currentTime}</p>
       </div>
     </div>
+    </>
   );
 };
 

@@ -4,10 +4,12 @@ import { plans } from "../../data";
 import Header from "../../components/Header";
 import HeaderImage from "../../images/header_bg_4.jpg";
 import Card from "../../UI/Card";
+import Navbar from "../../components/Navbar";
 
 const Plans = () => {
 	return (
 		<>
+		<Navbar />
 			<Header title="Transform with Us" image={HeaderImage}>
 			Our membership plans are tailored for you, offering the perfect fit for your
 			 fitness goals. Join us and let's achieve greatness together.

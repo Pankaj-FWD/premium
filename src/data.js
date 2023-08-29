@@ -27,10 +27,7 @@ export const links = [
         name: "Contact",
         path: '/contact'
     },
-    {
-        name: "Login",
-        path: '/Login'
-    }
+    
 ]
 
 
@@ -252,55 +249,54 @@ export const plans = [
 
 
 
-
-const Trainer1 = require('./images/trainer1.jpg')
-const Trainer2 = require('./images/trainer2.jpg')
-const Trainer3 = require('./images/trainer3.jpg')
-const Trainer4 = require('./images/trainer4.jpg')
-const Trainer5 = require('./images/trainer5.jpg')
-const Trainer6 = require('./images/trainer6.jpg')
+const Trainer1 = ('https://i.postimg.cc/158VpsVR/IMG-20230828-120649-1.jpg')
+const Trainer2 = ('https://i.postimg.cc/sXh46sbr/IMG20230731210814-02.jpg')
+const Trainer3 = ('https://i.postimg.cc/L8TqSXrT/Screenshot-2023-08-28-12-10-06-848-com-instagram-android.jpg')
+const Trainer4 = ('https://i.postimg.cc/Gmf3LCgV/IMG-20230828-WA0000-01.jpg')
+const Trainer5 = ('https://i.postimg.cc/2ydFYTz9/IMG20230828090852-01.jpg')
+const Trainer6 = ('https://i.postimg.cc/RCNDypWs/IMG-20230828-122607.jpg')
 
 
 export const trainers = [
     {
         id: 1,
         image: Trainer1,
-        name: 'John Doe',
+        name: 'Vicky Singh',
         job: 'Aerobic Trainer',
-        socials: ['https://instagram.com/', 'https://twitter.com/', 'https://facebook.com/', 'https://linkedin.com/']
+        socials: ['https://www.instagram.com/vickysingh5677/', 'https://twitter.com/Priyank71466531?t=2uHjVqk0yEAIFCSHe8Z6sw&s=08', 'https://www.facebook.com/profile.php?id=100006101498015&mibextid=2JQ9oc', 'https://linkedin.com/']
     },
     {
         id: 2,
         image: Trainer2,
-        name: 'Daniel vinyo',
+        name: 'Prashant Singh',
         job: 'Speed Trainer',
         socials: ['https://instagram.com/', 'https://twitter.com/', 'https://facebook.com/', 'https://linkedin.com/']
     },
     {
         id: 3,
         image: Trainer3,
-        name: 'Edem Quist',
+        name: 'Saurabh singh',
         job: 'Flexibility Trainer',
         socials: ['https://instagram.com/', 'https://twitter.com/', 'https://facebook.com/', 'https://linkedin.com/']
     },
     {
         id: 4,
         image: Trainer4,
-        name: 'Shatta Wale',
+        name: 'Aviral',
         job: 'Body Composition Trainer',
         socials: ['https://instagram.com/', 'https://twitter.com/', 'https://facebook.com/', 'https://linkedin.com/']
     },
     {
         id: 5,
         image: Trainer5,
-        name: 'Diana Ayi',
+        name: 'Sachin',
         job: 'Circuit Trainer',
         socials: ['https://instagram.com/', 'https://twitter.com/', 'https://facebook.com/', 'https://linkedin.com/']
     },
     {
         id: 6,
         image: Trainer6,
-        name: 'Wayne Carter',
+        name: 'Vishal',
         job: 'Physical Intelligence Trainer',
         socials: ['https://instagram.com/', 'https://twitter.com/', 'https://facebook.com/', 'https://linkedin.com/']
     }

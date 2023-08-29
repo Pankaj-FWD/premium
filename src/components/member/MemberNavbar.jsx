@@ -1,21 +1,25 @@
 import { useState ,useEffect} from "react";
 import { Link, NavLink } from "react-router-dom";
+// NavLink comes with an isactive prop which we can use to detect which page we on
+// so we can have a special style for that link
 import React from "react";
-import Logo from "../images/logo.png";
-import { links } from "../data";
+import Logo from "../../images/logo.png";
+import { links } from "../../data";
 import { GoThreeBars } from "react-icons/go";
 import { MdOutlineClose } from "react-icons/md";
-import "./navbar.css";
-import { getUserFromLocalStorage, removeUserFromLocalStorage } from "../utills/authUtils";
+import "../navbar.css";
+import { getUserFromLocalStorage, removeUserFromLocalStorage } from "../../utills/authUtils";
 
-const Navbar = () => {
+const MemberNavbar = () => {
 	const [isNavShowing, setIsNavShowing] = useState(false);
 	const [userName, setUserName] = useState('');
 
-	useEffect(() => {
-		const user = getUserFromLocalStorage();
-		setUserName(user)
-	}, [])
+useEffect(() => {
+	const user = getUserFromLocalStorage();
+	setUserName(user)
+}, [])
+
+
 
 	const handleNavToggle = () => {
 		return setIsNavShowing((prevVAlue) => {
@@ -27,6 +31,7 @@ const Navbar = () => {
 		removeUserFromLocalStorage();
 		window.location.href = "/login";
 	  };
+	  
 
 	return (
 		<nav>
@@ -75,4 +80,4 @@ const Navbar = () => {
 	);
 };
 
-export default Navbar;
+export default MemberNavbar;
